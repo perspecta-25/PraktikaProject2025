@@ -58,13 +58,38 @@ include 'common/header_start.php';
         tr:nth-child(even) {
             background-color:#1e2e4f;
         }
+        .page-title nav {
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 20px 0;
+}
+
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-title nav ol li+li {
+  padding-left: 10px;
+}
+
+.page-title nav ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
     </style>
 <?php
 include 'common/header_end.php';
 ?>
 <body class="fetch_page">
     <main class="main">
-    <nav class="breadcrumbs">
+    <div class="page-title">
+        <nav class="breadcrumbs">
         <div class="container">
           <ol class="d-flex align-items-center justify-content-center ps-0">
             <li><a href="index.php">Home</a></li>
@@ -72,6 +97,8 @@ include 'common/header_end.php';
           </ol>
         </div>
       </nav>
+    </div>
+    
     <h1>Export Database to JSON</h1>
 
     <div>
