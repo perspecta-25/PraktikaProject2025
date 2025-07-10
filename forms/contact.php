@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             sendResponse(false, "Database connection failed: #dkljasdaklj", null, 500);
         }
         
-        $result = $conn->query("SELECT * FROM contacts ORDER BY id ASC");
+        $result = $conn->query("SELECT * FROM contacts ORDER BY id DESC");
         
         if ($result) {
             $contacts = [];
@@ -89,8 +89,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param("ssss", $name, $email, $subject, $message);
 
         if ($stmt->execute()) {
-            $insertId = $conn->insert_id;
-            sendResponse(true, "Message received. Thank you!", ['id' => $insertId]);
+            // $insertId = $conn->insert_id;
+            // sendResponse(true, "Message received. Thank you!", ['id' => $insertId]);
+            echo "OK";
+            exit();
         } else {
             sendResponse(false, "Error saving message: " . $stmt->error, null, 500);
         }

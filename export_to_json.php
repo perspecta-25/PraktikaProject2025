@@ -45,6 +45,7 @@ include 'common/header_start.php';
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            margin-bottom: 20px
         }
         th, td {
             border: 1px solid #ddd;

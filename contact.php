@@ -118,7 +118,6 @@ include 'common/header_end.php';
 
           </div>
         </form><!-- End Contact Form -->
-        <a href="export_to_json.php" type="submit">Fetch Message</a>
 
         <!-- Contacts List Section -->
         <div class="contacts-section" id="contacts-list">
@@ -139,6 +138,9 @@ include 'common/header_end.php';
           </div>
         </div>
 
+        <div class="d-flex justify-content-center mt-4">
+          <a href="export_to_json.php" type="submit">Fetch Message</a>
+        </div>
 
       </div>
 
