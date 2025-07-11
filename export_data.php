@@ -3,9 +3,9 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 $host = 'localhost';
-$dbname = 'teast_base';
-$user = 'root';
-$pass = '';
+$dbname = 'praktikaproject2025_db';
+$user = 'praktikaproject2025_u';
+$pass = '3RgNZJpYK3ctTbO';
 
 try {
     $conn = new mysqli($host, $user, $pass, $dbname);
