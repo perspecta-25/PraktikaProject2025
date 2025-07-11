@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 $host = 'localhost';
 $dbname = 'praktikaproject2025_db';
 $user = 'praktikaproject2025_u';
-$pass = '3RgNZJpYK3ctTb0';
+$pass = '3RgNZJpYK3ctTbO';
 
 // Function to send JSON response
 function sendResponse($success, $message, $data = null, $statusCode = 200) {

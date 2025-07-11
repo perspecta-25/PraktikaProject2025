@@ -1,9 +1,13 @@
 <?php
+
+ini_set('display_errors', 1); 
+ini_set('display_startup_errors', 1); 
+error_reporting(E_ALL);
 // Database configuration
 $host = 'localhost';
 $dbname = 'praktikaproject2025_db';
 $user = 'praktikaproject2025_u';
-$pass = '3RgNZJpYK3ctTb0';
+$pass = '3RgNZJpYK3ctTbO';
 
 // Connect to MySQL
 $conn = new mysqli($host, $user, $pass, $db);
