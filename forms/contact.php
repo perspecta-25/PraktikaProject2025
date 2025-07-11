@@ -15,9 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // Database configuration
 $host = 'localhost';
-$dbname = 'teast_base';
-$user = 'root';
-$pass = '';
+$dbname = 'praktikaproject2025_db';
+$user = 'praktikaproject2025_u';
+$pass = '3RgNZJpYK3ctTb0';
 
 // Function to send JSON response
 function sendResponse($success, $message, $data = null, $statusCode = 200) {
