@@ -150,6 +150,7 @@ include 'common/header_end.php';
 
     <script>
       $(document).ready(function() {
+        $('.php-email-form').off('submit');
         // Load existing contacts when page loads
         loadContacts();
 
