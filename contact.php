@@ -84,7 +84,7 @@ include 'common/header_end.php';
         <!-- Response message area -->
 
 
-        <form action="forms/contact.php" method="POST" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
 
