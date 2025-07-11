@@ -7,7 +7,6 @@
   <title>Personal Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <base href="/">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
